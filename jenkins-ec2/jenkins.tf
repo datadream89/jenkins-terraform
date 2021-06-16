@@ -35,7 +35,7 @@ resource "aws_instance" "JenkinsEC2" {
   tags = {
     Name = "terraform-jenkins-master"
   }
-  user_data = file("userdata.sh")
+  user_data = file("installjenkins.sh")
 
 }
 
