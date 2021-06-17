@@ -54,5 +54,5 @@ data "aws_ami" "ubuntu" {
 }
 
 output "sonar_endpoint" {
-  value = formatlist("http://%s:%s/", aws_instance.SonarEC2.*.public_ip, "8080")
+  value = formatlist("http://%s:%s/", aws_instance.SonarEC2.*.public_ip, "9000")
 }
